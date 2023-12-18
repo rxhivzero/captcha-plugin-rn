@@ -253,7 +253,7 @@ NTESRNRouterEmitter.addListener('onError', (event) => {
 - 取消验证码回调 onCancel
 
 ```
-NTESRNRouterEmitter.addListener('onClose', (event) => {
+NTESRNRouterEmitter.addListener('onCancel', (event) => {
       //message：取消的具体场景
       alert(event.message);
 });
