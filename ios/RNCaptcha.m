@@ -357,7 +357,7 @@ RCT_EXPORT_METHOD(showCaptcha)
 /**
  * 关闭验证码窗口后的回调
  */
-- (void)verifyCodeCloseWindow{
+- (void)verifyCodeCloseWindow:(NTESVerifyCodeClose)close{
   NSLog(@"收到关闭验证码视图的回调");
   [self sendEventWithName:@"onCancel" body:@{@"message": @"关闭验证码视图"}];
   dispatch_async(dispatch_get_main_queue(), ^(){
